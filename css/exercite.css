@@ -1,0 +1,54 @@
+.hi{
+    width: 500px;
+}
+.nh{
+    padding-left: 10px;
+}
+.ei{
+    width: 495px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.his{
+    width: 300px;
+    background-color: rgb(133, 191, 248);
+    margin-left: 90px;
+}
+.hise{
+    width: 300px;
+    background-color: rgb(245, 122, 122);
+    margin-left: 90px;
+}
+.hiser{
+    width: 400px;
+    background-color: rgb(137, 169, 240);
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.container{
+    background-color: blanchedalmond;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    width: 550px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2%;
+    
+
+}
+.container hr{
+    background-color: rgb(20, 0, 90);
+    height: 2px;
+}
+.brith{
+    width: 120px;
+}
+.biy{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.redios{
+    padding-left: 100px;
+    padding-top: 30px;
+}
