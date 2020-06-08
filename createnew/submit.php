@@ -1,14 +1,17 @@
 <?php
 include('conection.php');
-// $firstname =$_GET['firstname'];
-// $lastname =$_GET['lastname'];
-// $email =$_GET['email'];
-// $password =$_GET['password'];
-// $confirm =$_GET['confirm'];
-// $date =$_GET['date'];
-// $sex =$_GET['sex'];
-$insertData="INSERT INTO form_create_acc VALUES (null, 'hink', 'kanna', 'aba@gmail.com' , 'male', '333', '2020-06-11')";
-mysqli_query($conn, $insertData);
-// $insertData="INSERT INTO form_create_acc VALUES ('$firstname', '$lastname', '$email', '$password', '$confirm', '$male', '$female', '$day', '$month', '$year')";
-// mysqli_query($conn, $insertData);
+@$id = $_GET['id'];
+@$lastname =$_GET['lastname'];
+@$email =$_GET['email'];
+@$password =$_GET['password'];
+@$date =$_GET['date'];
+@$sex =$_GET['sex'];
+@$firstname =$_GET['firstname'];
+@$insertData="INSERT INTO form_cteate_acc VALUES (null,'$lastname','$email','$password','$date','$sex','$firstname')";
+if(mysqli_query($conn, $insertData)){
+    echo "You are create new record successfully.";
+}else{
+    echo "Errore :".$insertData."<br/>".mysqli_error($conn);
+}
+
 ?>

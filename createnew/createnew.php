@@ -26,10 +26,14 @@
   <link rel="stylesheet" href="../css/exercite.css">
 </head>
 <body>
-    <form action="submit.php">
+    <form action="submit.php" method="GET">
         <div class="container">
             <h3> Create New Account <h3>
             <div class="row">
+                <div class="col-md-12">
+                    <h4> Firstname <h4>
+                    <input type="text" name="id" id="id" placeholder="Enter id" disabled>
+                </div>
                 <div class="col-md-6">
                     <h4> Firstname <h4>
                     <input type="text" name="firstname" id="firstname" placeholder="Enter firstname">
