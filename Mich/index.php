@@ -7,5 +7,8 @@
 </head>
 <body>
     <h1>Hello world</h1>
+    <ul>
+    <li>hi</li>
+    </ul>
 </body>
 </html>
