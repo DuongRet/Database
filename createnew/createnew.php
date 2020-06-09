@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4> Firstname <h4>
-                    <input type="text" name="id" id="id" placeholder="Enter id" disabled>
+                    <input type="text" name="id" id="id" placeholder="Enter id">
                 </div>
                 <div class="col-md-6">
                     <h4> Firstname <h4>

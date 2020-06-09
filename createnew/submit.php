@@ -7,7 +7,7 @@ include('conection.php');
 @$date =$_GET['date'];
 @$sex =$_GET['sex'];
 @$firstname =$_GET['firstname'];
-@$insertData="INSERT INTO form_cteate_acc VALUES (null,'$lastname','$email','$password','$date','$sex','$firstname')";
+@$insertData="INSERT INTO form_cteate_acc VALUES ('$id','$lastname','$email','$password','$date','$sex','$firstname')";
 if(mysqli_query($conn, $insertData)){
     echo "You are create new record successfully.";
 }else{
