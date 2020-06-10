@@ -11,9 +11,11 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
 @$sex =$_GET['sex'];
 @$date =$_GET['date'];
 @$class =$_GET['class'];
-$insertData = "INSERT INTO `studentlist`(`name`, `sex`, `date`, `class`, `id`) VALUES (''$name','$sex','$date','$class',null)";
-mysqli_query($conn,$insertData);
-
+if($name != "" && $sex != "" && $date != "" && $class !=""){
+  $insertData = "INSERT INTO studentlist VALUES (null,'$name','$sex','$date','$class')";
+  mysqli_query($conn,$insertData);
+  echo "<meta http-equiv='refresh' content=' 0; url=http://localhost/Database/Duong/makewebsite/body/body.php'/>";
+}
 $query ="SELECT * FROM studentlist";
 $data = mysqli_query($conn,$query);
 $tatal = mysqli_num_rows($data)
@@ -56,8 +58,8 @@ $tatal = mysqli_num_rows($data)
   </ul>
 </nav>
 <div>
-<form action="<?= $_SERVER['PHP_SELE'] ?>" autocomplete="off">
-<!-- <input class="btn btn-success" id="save" type="submit" value="Save" > -->
+<form action="<?= $_SERVER['PHP_SELF'] ?>" method="get" autocomplete="off">
+<input class="btn btn-success" id="save" type="submit" value="Save" >
   <table class="table" border="1">
     <thead>
       <tr>
@@ -71,14 +73,18 @@ $tatal = mysqli_num_rows($data)
     
     <tbody>
       <tr>
-        <td><input type="text" name="id" id="name" ></td>
+        <?php if($tatal == ""){ ?>
+          <td><input type="text" value="0" id="name" disabled></td>
+        <?php }else{ ?>
+        <td><input type="text" value="<?= $tatal ?>" id="name" disabled style="text-align: center;color:red;font-weight:bold;"></td>
+        <?php }?>
         <td><input type="text" name="name" id="name" ></td>
         <td><input type="text" name="sex" id="name" ></td>
         <td><input type="date" name="date" id="name" ></td>
         <td><input type="text" name="class" id="name"></td>
       </tr>
     </tbody> 
-    <input class="btn btn-success" id="save" type="submit" value="Save" >
+    <!-- <input class="btn btn-success" id="save" type="submit" value="Save" > -->
   </form>
   </table>
   <table class="table" border="1">
