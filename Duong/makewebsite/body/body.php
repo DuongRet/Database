@@ -76,7 +76,7 @@ $tatal = mysqli_num_rows($data)
         <?php if($tatal == ""){ ?>
           <td><input type="text" value="0" id="name" disabled></td>
         <?php }else{ ?>
-        <td><input type="text" value="<?= $tatal ?>" id="name" disabled style="text-align: center;color:red;font-weight:bold;"></td>
+        <td><input type="text" value="<?= $tatal + 1 ?>" id="name" disabled style="text-align: center;color:red;font-weight:bold;"></td>
         <?php }?>
         <td><input type="text" name="name" id="name" ></td>
         <td><input type="text" name="sex" id="name" ></td>
