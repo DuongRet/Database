@@ -58,7 +58,7 @@ $tatal = mysqli_num_rows($data)
   </ul>
 </nav>
 <div>
-<form action="<?= $_SERVER['PHP_SELF'] ?>" method="get" autocomplete="off">
+<form method="get" autocomplete="off">
 <input class="btn btn-success" id="save" type="submit" value="Save" >
   <table class="table" border="1">
     <thead>
