@@ -90,11 +90,11 @@ $tatal = mysqli_num_rows($data)
   <table class="table" border="1">
     <thead>
       <tr>
-        <th>N<sup>o</sup></th>
-        <th>Name</th>
-        <th>Sex</th>
-        <th>Date of birth</th>
-        <th>Class</th>
+        <th class="text-center">N<sup>o</sup></th>
+        <th class="text-center">Name</th>
+        <th class="text-center">Sex</th>
+        <th class="text-center">Date of birth</th>
+        <th class="text-center">Class</th>
       </tr>
     </thead>
     <tbody>
@@ -102,11 +102,11 @@ $tatal = mysqli_num_rows($data)
      while($result = mysqli_fetch_assoc($data)) {
     ?>
       <tr>
-       <td><?= @$result['id']?></td>
-       <td><?= @$result['name']?></td>
-       <td><?= @$result['sex']?></td>
-       <td><?= @$result['date']?></td>
-       <td><?= @$result['class']?></td>
+       <td class="text-center"><?= @$result['id']?></td>
+       <td class="text-center"><?= @$result['name']?></td>
+       <td class="text-center"><?= @$result['sex']?></td>
+       <td class="text-center"><?= @$result['date']?></td>
+       <td class="text-center"><?= @$result['class']?></td>
       </tr>
       <?php } ?>
     </tbody>
