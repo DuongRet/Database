@@ -1,0 +1,16 @@
+.affix {
+top: 0;
+width: 100%;
+z-index: 9999 !important;
+}
+.affix + .container-fluid {
+padding-top: 70px;
+}
+#name{
+    width: 100%;
+}
+#save{
+    width: 100px;
+    float: right !important;
+    margin-bottom: 5px !important;
+}
