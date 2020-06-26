@@ -14,7 +14,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
 if($name != "" && $sex != "" && $date != "" && $class !=""){
   $insertData = "INSERT INTO studentlist VALUES (null,'$name','$sex','$date','$class')";
   mysqli_query($conn,$insertData);
-  echo "<meta http-equiv='refresh' content=' 0; url=http://localhost/Database/Duong/makewebsite/body/body.php'/>";
+  echo "<meta http-equiv='refresh' content=' 0; url=http://localhost/makewebsite/body/body.php'/>";
 }
 $query ="SELECT * FROM studentlist";
 $data = mysqli_query($conn,$query);
@@ -58,7 +58,7 @@ $tatal = mysqli_num_rows($data)
   </ul>
 </nav>
 <div>
-<form method="get" autocomplete="off">
+<form autocomplete="off">
 <input class="btn btn-success" id="save" type="submit" value="Save" >
   <table class="table" border="1">
     <thead>
