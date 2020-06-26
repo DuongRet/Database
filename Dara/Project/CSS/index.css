@@ -1,0 +1,57 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+ width: 100%;
+ 
+}
+
+/* Bootom footer */
+
+
+ .h{
+    width: 100%;
+    background: linear-gradient(90deg, rgba(30,19,207,1) 0%, rgba(22,84,196,1) 50%, rgba(0,212,255,1) 100%);
+    margin-top: 5px;
+    font-family:'Times New Roman';
+}
+.h h4{
+    color: white;
+    padding: 10px;
+    margin-left: 100px;
+   
+}
+.footer{
+    background-color: white;
+    padding-top: 30px;
+}
+
+.payment-method img.payment-img{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.contact ul li{
+    list-style-type:none;
+  margin-left: 0px;
+}
+.row .col-md-1{
+float:right;
+}
+.reach-us a img{
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.follow-us a img{
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+} 
+.menuhe{
+    list-style: none;
+    display: flex;
+    background-color: rgba(0, 0, 255, 0.329);
+}
+.na{
+    margin-left: 50px;
+    padding-left: 50px;
+}

@@ -1,0 +1,28 @@
+.brand{
+    width: 65%;
+    height: auto;
+    border: 1px solid rgba(236, 233, 233, 0.651);
+    border-radius: 7px;
+    box-shadow: 2px, 6px, rgb(214, 88, 88),9px;
+    transition: transform 0.5s, filter 0.5s ease-in-out;
+    vertical-align: middle;
+    
+    margin-top: 10px;
+
+}
+.img-hover-zoom{
+    margin-left: -50px;
+}
+
+
+  /* The Transformation */
+  .img-hover-zoom:hover img {
+    filter: brightness(100%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px #888888 ;
+    background-color: blue;
+  }
+  .row{
+      margin-top: 30px;
+  }
+  

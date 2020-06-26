@@ -1,0 +1,26 @@
+.hello {
+    border: 0;
+    padding: 30px 15px;
+    width: 200px;
+    background: steelblue;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    
+    letter-spacing: 2px;
+    border-radius: 10px;
+  }
+  .shine {
+    position: absolute;
+    top: 0;
+    left: -70px;
+    height: 100px;
+    width: 50px;
+    background: rgba(255, 255, 255, 0.4);
+    transition: all .3s linear;
+    transform: skewX(45deg) translateX(0);
+  }
+  .container:hover .shine {
+    transform: skewX(45deg) translateX(300px);
+  }
+  

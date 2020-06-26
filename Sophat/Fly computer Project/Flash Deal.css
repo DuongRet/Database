@@ -1,0 +1,94 @@
+
+/*.main{
+    margin-top: 10%;
+}
+.text{
+    margin-left: 8%;
+}
+.flash{
+    color: #4f58a1;
+    font-weight: bold;
+    
+    font-size: 30px;
+}
+.deal{
+    color: grey;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+   
+}
+.computer{
+    width: 590px;
+    height: 250px;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+.img{
+    margin-left: 5%;
+    margin-right: 5%;
+   
+
+}
+*/
+.margin-top1{
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: #8079eb;
+}
+.shine,.shine1,.shine2,.shine3{
+    position: absolute;
+    top: 0;
+    left: -10px;
+    height: 300px;
+    width: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    transition: all .4s linear;
+    transform: skewX(-5deg) translateX(0);
+    
+  }
+  .img-hover:hover .shine{
+    transform: skewX(45deg) translateX(800px);
+    width: 100px;
+
+  }
+  .img-hover:hover .shine1{
+    transform: skewX(-45deg) translateX(800px);
+    width: 100px;
+  }
+  .img-hover:hover .shine2{
+    transform: skewX(45deg) translateX(800px);
+    width: 100px;
+  }
+  .img-hover:hover .shine3{
+    transform: skewX(-45deg) translateX(800px);
+    width: 100px;
+  }
+  
+  
+
+/*.margin-top1:hover{
+    background-attachment: rgba(128, 128, 128, 0.473);
+    
+}*/
+/*.img-hover1{
+    background-image: linear-gradient(0 0 , 
+    rgb(255,255,255,0.2), 0%,
+    rgb(255,255,255,0.2), 35%,
+    rgb(255,255,255,0.6), 40%,
+    rgb(255,255,255,0.0), 50%
+    ),
+    linear-gradient(to right,#c487cc,0%,#8079eb 100%);
+   
+   
+    background-image: 
+    -webkit-linear-gradient(top left, 
+    rgb(255,255,255,0.2), 0%,
+    rgb(255,255,255,0.2), 35%,
+    rgb(255,255,255,0.6), 40%,
+    rgb(255,255,255,0.0), 50%
+    ),
+    linear-gradient(to right,#c487cc,0%,#8079eb 100%);
+    background-color: aqua;
+}
