@@ -191,9 +191,35 @@ div.padding_me{
     color: white;
 }
 /*Start Responsive*/
-
-
-
+/*Responsive Chart*/
+@media screen and (max-width: 500px){
+    p.company-name{
+        font-size: 10px !important;
+    }
+    div.content-chart{
+        width: 300px !important;
+    }
+    ul.chart-to{
+        margin-left: 18px !important;
+    }
+    ul.chart-to li{
+        margin: 0 2px !important;
+    }
+    img.this-logoc{
+        height: 30px !important;
+    }
+    p.p-chart{
+        font-size: 12px;
+        padding: 0 5px !important;
+    }
+    a.a-go-chart{
+        font-size: 14px !important;
+    }
+    a.login-go-chart {
+        font-size: 14px;
+    }
+}
+/*End Responsive chart*/
 @media(min-width: 769px){
     ul.main-menu{
         padding: 0 !important;
