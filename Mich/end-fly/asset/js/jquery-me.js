@@ -8,6 +8,12 @@ $(document).ready(function(){
     });
 
 //End chart
+// Scroll
+    $("#show_scroll").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#header_scroll_up").offset().top
+        }, 2000);
+    });
     $(".main_card").mouseover(function(){
        var eThis0 = $(this);
         eThis0.find(".sub_card").fadeIn(600);

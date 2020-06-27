@@ -15,18 +15,28 @@ div.main-chart{
     right: 20px;
     z-index: 1000;
 }
-div.main-chart div.position-chart img.img-chart{
+div.main-chart div.position-chart img.img-chart,
+img.img-telegram,
+img.img-facebook{
     height: 40px;
     border-radius: 50%;
+    transition: all 1s;
 }
-div.main-chart div.position-chart img.img-chart:hover{
-    height: 50px;
+div.main-chart div.position-chart img.img-chart:hover,
+img.img-telegram:hover,
+img.img-facebook:hover{
+    /*height: 50px;*/
+    transform: scale(1.3);
     -webkit-box-shadow: -1px 3px 14px -4px rgba(0,0,0,1);
     -moz-box-shadow: -1px 3px 14px -4px rgba(0,0,0,1);
     box-shadow: -1px 3px 14px -4px rgba(0,0,0,1);
     transition: all 0.5s;
 }
-
+div.main-chart div.position-chart a#show_scroll{
+    font-size: 40px;
+    padding: 15px;
+    /*alert chart*/
+}
     /*alert chart*/
 div.alert-chart{
     position: fixed;
@@ -217,6 +227,50 @@ div.padding_me{
     }
     a.login-go-chart {
         font-size: 14px;
+    }
+    /*Responsive chart*/
+    div.alert-chart{
+        right: 5px;
+    }
+    div.content-chart {
+        width: 300px;
+    }
+    p.company-name {
+        font-size: 10px;
+    }
+    ul.chart-to {
+        margin-left: 20px;
+    }
+    ul.chart-to li {
+        margin: 0;
+        line-height: 30px;
+    }
+    p.p-chart {
+        padding: 0 5px;
+        font-size: 14px;
+    }
+    img.this-logoc {
+        height: 35px;
+    }
+    a.a-go-chart {
+        font-size: 14px;
+    }
+    a.login-go-chart {
+        font-size: 14px;
+    }
+    div.main-chart div.position-chart img.img-chart,
+    img.img-telegram,
+    img.img-facebook {
+        height: 30px;
+    }
+    img.img-facebook {
+        margin: 0;
+    }
+    /*End Responsive chart*/
+    /*Scroll*/
+    div.main-chart div.position-chart a#show_scroll {
+        font-size: 30px;
+        padding: 5px;
     }
 }
 /*End Responsive chart*/
