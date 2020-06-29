@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="asset/img/logo.jpg" type="image/x-icon">
     <title>Home Page</title>
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="asset/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="asset/css/stylesheet.css">
 </head>
+
 <body>
-<!--    start header-->
-    <div class="bg-header">
+    <!-- Start chart -->
+    <div class="my-chart">
+        <div class="alert-chart" id="my_chart">
+            <div class="content-chart">
+                <p class="company-name">Fly-computer.com・Typically replies within minutes</p>
+                <ul class="chart-to">
+                    <li class="chart-logo">
+                        <img class="this-logoc" src="asset/img/logo.jpg">
+                    </li>
+                    <li class="alert-help">
+                        <p class="p-chart">សួរស្តីបងប្អូន! តើមានអ្វីឲ្យ​ខ្ញុំជួយទេ?</p>
+                    </li>
+                </ul>
+                <ul class="go-chart">
+                    <li class="li-go-chart">
+                        <a href="#" class="a-go-chart"><i class="fab fa-facebook-messenger"></i>&nbsp;Continue as User</a>
+                    </li>
+                    <li>
+                        <a href="#" class="login-go-chart">Not you? Log into Messenger</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon-closing">
+                <a class="my-icon-chart" id="closing_chart"><i class="far fa-times-circle"></i></a>
+            </div>
+        </div>
+        <div class="main-chart">
+            <div class="position-chart">
+                <a href="#" id="show_telegram"><img class="img-telegram" src="asset/img/telegram.jpg"></a>
+                <a href="#" id="show_facebook"><img class="img-facebook" src="asset/img/facebook.png"></a>
+                <span id="show_chart"><img class="img-chart" src="asset/img/messager.png"></span>
+                <a href="#" id="show_scroll"><i class="fas fa-angle-double-up"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- End chart -->
+    <!--    start header-->
+    <div class="bg-header" id="header_scroll_up">
         <div class="container_me">
             <div class="header">
                 <div class="row">
-                    <div class="col-2 col-md-2" style="padding: 0;">
-                        <a href="index.html"><img class="my_logo" src="asset/img/logo%20landscap.png" alt="Logo"></a>
+                    <div class="col-2 col-md-2">
+                        <a href="index.html"><img class="my_logo" src="asset/img/logo.jpg" alt="Logo"></a>
                     </div>
                     <div class="col-8 col-md-6">
                         <div class="search_me">
@@ -28,346 +74,1167 @@
                         </div>
                     </div>
                     <div class="col-2 col-md-4 padding_me">
-                            <!--                    <div class="container">-->
-                            <div class="my_top_header">
-                                <div class="responsive_1">
-                                    <div class="text-center icon_responsive">
-                                        <a href="#"><i class="far fa-user-circle"></i> </a>
-                                    </div>
-                                </div>
-                                <div class="order_main">
-                                    <ul class="order_1">
-                                        <li><a href="#"><i class="far fa-heart"></i> <span class="li_color">Wish List</span></a></li>
-                                        <li class="main_card"><a href="#"><i class="fas fa-shopping-cart"></i><sup style="color: red; font-weight: bold;">0</sup> <span class="li_color">Card</span></a>
-                                            <div class="sub_card">
-                                                <div class="position_me">
-                                                    <div class="my_card">
-                                                        <h6>0 ITEM</h6>
-                                                        <h5><a href="#" class="text-info">View card</a></h5>                                                 
-                                                    </div>                                                
-                                                    <p>You have no items in your shopping cart.</p>                                                
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li><a href="#"><i class="far fa-user-circle"></i> <span class="li_color">Login/Sign Up</span></a></li>
-                                    </ul>
+                        <div class="my_top_header">
+                            <div class="responsive_1">
+                                <div class="text-center icon_responsive">
+                                    <a href="#"><i class="far fa-user-circle"></i> </a>
                                 </div>
                             </div>
-                            <!--                    </div>-->
+                            <div class="order_main">
+                                <ul class="order_1">
+                                    <li><a href="#"><i class="far fa-heart"></i>&nbsp;<span class="li_color">Wish List</span></a></li>
+                                    <li class="main_card"><a href="#"><i class="fas fa-shopping-cart"></i><sup style="color: red; font-weight: bold;">0</sup> <span class="li_color">Card</span></a>
+                                        <div class="sub_card">
+                                            <div class="position_me">
+                                                <div class="my_card">
+                                                    <h6>0 ITEM</h6>
+                                                    <h5><a href="#" class="text-info">View card</a></h5>
+                                                </div>
+                                                <p>You have no items in your shopping cart.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> <span class="li_color">Login/Sign Up</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!--    End header-->
-<!--    Start menu-->
+    <!--    End header-->
+    <!--    Start menu-->
     <div class="my-main-menu sticky-top">
         <div class="container-fluid">
-            <div class="menu_click">
-                <a href="#" id="load_menu"><i class="fas fa-bars"></i> Menu</a>
-            </div>
+            <input type="checkbox" id="check_me">
+            <label for="check_me" class="click-menu"><i class="fas fa-bars"></i>&nbsp;Menu</label>
             <div class="show_menu_all">
                 <ul class="main-menu">
-                    <li id="all_product"><a href="#"><i class="fas fa-bars"></i> All Product</a>
-                    <!--                sub menu all product-->
-                            <div class="menu-all-product" id="show_all">
-                                <div class="container-fluid pb-2">
-                                    <div class="row">
-                                        <div class="col-md-3 main-left">
-                                            <ul class="all_left">
-                                                <li id="pComputer"><img src="asset/img/sub_menu/Computer.png"> Personal Computer</li>
-                                                <li id="cComponent"><img src="asset/img/sub_menu/Computer-Component.png"> Computer components</li>
-                                                <li id="cServer"><img src="asset/img/sub_menu/ServerNetwork.png"> Server & Storage</li>
-                                                <li id="cNetwork"><img src="asset/img/sub_menu/networking.png"> Networking</li>
-                                                <li id="cAccessories"><img src="asset/img/sub_menu/Computer-Accessori.png"> Computer accessories</li>
-                                                <li id="cSoftware"><img src="asset/img/sub_menu/Software.png"> Software</li>
-                                                <li id="cBettery"><img src="asset/img/sub_menu/Battery.png"> Bettery and Power Backup</li>
-                                                <li id="cPrinter"><img src="asset/img/sub_menu/PrinterScanner.png"> Printer & scanners</li>
-                                                <li id="cProjector"><img src="asset/img/sub_menu/DisplayProject.png"> Display & Projectors</li>
-                                                <li id="cTelephone"><img src="asset/img/sub_menu/Telephone-System.png"> Telephone System</li>
-                                                <li id="cCamera"><img src="asset/img/sub_menu/Camera-Security.png"> Camera Security</li>
-                                                <li id="cService"><img src="asset/img/sub_menu/Service.png"> Services</li>
-                                                <li id="cBrand_name"><img src="asset/img/sub_menu/Shop-By-Brand.png"> Shop by Brand</li>                        
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-9" id="sub_menu_right">
-                                            <div id="personal_computer">
-                                                <div class="row">
-                                                    <div class="col-md-4 text-left border_right_me">
-                                                        <p>Notebook</p>
-                                                        <ul class="per-computer">
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> Ultrabook</a></li>
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> All Notebooks</a></li>
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> Macbook</a></li>
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> Laptop Gaming</a></li>
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> Laptops 2 in 1</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-md-4 text-left border_right_me">
-                                                        <p>Desktops</p>
-                                                        <ul class="per-computer">
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> All in one</a></li>
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> Clone PC</a></li>
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> Workstation</a></li>
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> BrandDesktops</a></li>
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> Desktops Gaming</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-md-4 text-left">
-                                                        <p>Tablets</p>
-                                                        <ul class="per-computer">
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> IOS</a></li>
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> Android</a></li>
-                                                            <li><a href="#"><i class="fas fa-angle-right"></i> Surface</a></li>                                                   
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                    <label for="check_me" class="click-cencel"><i class="fas fa-times-circle"></i></label>
+                    <li class="menu-list-main"><a class="a-main active" href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a>
+                    <li class="menu-list-main" id="sub-main1"><a class="a-main" href="#">Laptop&nbsp;<i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu2" id="sub_menu1">
+                            <ul class="s-sub">
+                                <li class="li-s-sub" id="d_ub_main1"><a class="a-li-s-sub" href="#">Notebook&nbsp;<i class="fas fa-angle-down"></i></a>
+                                    <div class="d-sub-menu" id="d_sub_menu">
+                                        <ul class="d-sub-menu">
+                                            <li class="d-li-s-sub"><a href="#">Ultrabook</a></li>
+                                            <li class="d-li-s-sub"><a href="#">All Notebooks</a></li>
+                                            <li class="d-li-s-sub"><a href="#">Macbook</a></li>
+                                            <li class="d-li-s-sub"><a href="#">Laptop Gaming</a></li>
+                                            <li class="d-li-s-sub"><a href="#">Laptops 2 in 1</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </div>             
-                    </li>
-                    <!--                End sub menu all produc-->
-                    <li><a href="#">Solutions</a></li>
-                    <li class="menu-main" id="menu_sub"><a href="#">About Us</a>
-                        <div class="sub-menu" id="sub_menu">
-                            <ul>
-                                <li><a href="#">Milestone</a></li>
-                                <li><a href="#">Our Awards</a></li>
-                                <li><a href="#">Our Partners</a></li>
+                                </li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Microsoft</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Asus</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Acer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Dell</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Lenovo</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Toshiba</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Razer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Nec</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Samsung</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">HP</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Anitech</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li class="menu-list-main" id="sub-main1"><a class="a-main" href="#">Desktop&nbsp;<i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu2" id="sub_menu1">
+                            <ul class="s-sub">
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">MacBook</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Microsoft</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Asus</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Acer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Dell</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Lenovo</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Toshiba</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Razer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Nec</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Samsung</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">HP</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Anitech</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Server</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Camera</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Service</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Printer</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Accessories</a></li>
+                    <li class="menu-list-main" id="sub-main1"><a class="a-main" href="#">System POS</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Contact Us</a></li>
                 </ul>
             </div>
             <div class="icon_shopping">
+                <!-- <div class="icon-me"> -->
+                <a href="#"><i class="far fa-heart"></i></a>
                 <a href="#"><i class="fas fa-shopping-cart"></i><sup style="color: red; font-weight: bold;">0</sup></a>
-            </div>
-        </div> 
-    </div>   
-<!--End menu-->
-
-    <div class="logo-brand-name">
-        <div class="fex-width" id="my_fexed">            
-            <div class="my-logo-brand">
-                <ul class="row logo-brand-fex">
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/TOSHIBA-150x150.jpg">
-                        </a>
-                    </li>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/acer-150x150.png">
-                        </a>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/transcend-150x150.png">
-                        </a>
-                    </li>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/razer-1-150x150.png">
-                        </a>
-                    </li>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/apple-150x150.jpg">
-                        </a>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/anitech-150x150.png">
-                        </a>
-                    </li>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/amp-150x150.jpg">
-                        </a>
-                    </li>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/acer-150x150.png">
-                        </a>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/transcend-150x150.png">
-                        </a>
-                    </li>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/TOSHIBA-150x150.jpg">
-                        </a>
-                    </li>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/acer-150x150.png">
-                        </a>
-                    <li class="col-6 col-padding-left-rigth">
-                        <a href="#">
-                            <img class="logo-fexed" src="asset/img/brand-logo/transcend-150x150.png">
-                        </a>
-                    </li>
-                </ul>
+                <!-- </div> -->
             </div>
         </div>
     </div>
-    <div style="height: 300px"></div>
-
-<!--    Start shop by brand-->
-    <div class="shop-by-brand">
-        <div class="container-fluid">
-            <h3><span class="shop_word">Shop</span> by brands</h3>
-            <div class="brand-logo">
-                <div class="the-logo">
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/TOSHIBA-150x150.jpg"></a>
+    <!--End menu-->
+    <div class="container content-me">
+        <!-- Start slide show -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="asset/img/slide/1.png" alt="Los Angeles" width="100%">
                     </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/dell-1-150x150.png"></a>
+                    <div class="carousel-item">
+                        <img src="asset/img/slide/2.jpg" alt="Chicago" width="100%">
                     </div>
-                    <div class=" this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/hp-1-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/acer-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/lenovo-1-1-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/asus-150x150.png"></a>
-                    </div>                   
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/nec-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/epson-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/supermicro-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/prolink-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/transcend-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/razer-1-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/logitech-1-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/Untitled-4-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/anitech-150x150.png"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/palnet-150x150.jpg"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/apple-150x150.jpg"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/amp-150x150.jpg"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/lo.jpg"></a>
-                    </div>
-                    <div class="this-logo m-2">
-                        <a href="#"><img class="br-logo logo-border" src="asset/img/brand-logo/microsoft-150x150.jpg"></a>
+                    <div class="carousel-item">
+                        <img src="asset/img/slide/3.jpg" alt="New York" width="100%">
                     </div>
                 </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        <!-- End slide show -->
+        <!-- New model content  -->
+        <div class="asus-model mt-2">
+            <div class="container model-display">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                        <div class="content-list">
+                            <div class="text-new">
+                                <h3 class="text-center">New</h3>
+                            </div>
+                            <div class="text-price">
+                                <h3 class="price-pc">$1,299</h3>
+                            </div>
+                            <div class="main-image text-center">
+                                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-p p-1">
+                                <ul class="ul-list">
+                                    <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                </ul>
+                            </div>
+                            <div class="favorite-product text-center">
+                                <span class="span-favorite" id="favorite"><i class="fa fa-heart"></i></span>
+                                <span class="span-favorite" id="favorite0"><i class="far fa-heart"></i></span>
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                        <div class="content-list">
+                            <div class="text-new">
+                                <h3 class="text-center">New</h3>
+                            </div>
+                            <div class="text-price">
+                                <h3 class="price-pc">$256</h3>
+                            </div>
+                            <div class="main-image text-center">
+                                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="shadow-box" src="asset/img/new-product/01-LU-482-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/02-LV-125-2-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/03-la-358-1554347962-300x300.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-p p-1">
+                                <ul class="ul-list">
+                                    <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                </ul>
+                            </div>
+                            <div class="favorite-product text-center">
+                                <span class="span-favorite" id="favorite1"><i class="fa fa-heart"></i></span>
+                                <span class="span-favorite" id="favorite2"><i class="far fa-heart"></i></span>
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                        <div class="content-list">
+                            <div class="text-new">
+                                <h3 class="text-center">New</h3>
+                            </div>
+                            <div class="text-price">
+                                <h3 class="price-pc">$1,299</h3>
+                            </div>
+                            <div class="main-image text-center">
+                                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="shadow-box" src="asset/img/new-product/04-LU-201-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/05-LD-029-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/06-LD-299-300x300.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-p p-1">
+                                <ul class="ul-list">
+                                    <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                </ul>
+                            </div>
+                            <div class="favorite-product text-center">
+                                <span class="span-favorite" id="favorite3"><i class="fa fa-heart"></i></span>
+                                <span class="span-favorite" id="favorite4"><i class="far fa-heart"></i></span>
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                        <div class="content-list">
+                            <div class="text-new">
+                                <h3 class="text-center">New</h3>
+                            </div>
+                            <div class="text-price">
+                                <h3 class="price-pc">$1,299</h3>
+                            </div>
+                            <div class="main-image text-center">
+                                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="shadow-box" src="asset/img/new-product/07-ld-102-1562901742-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/08-la-617-1555123990-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/09-la-361-1561950452-300x300.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-p p-1">
+                                <ul class="ul-list">
+                                    <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                </ul>
+                            </div>
+                            <div class="favorite-product text-center">
+                                <span class="span-favorite" id="favorite5"><i class="fa fa-heart"></i></span>
+                                <span class="span-favorite" id="favorite6"><i class="far fa-heart"></i></span>
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 pt-pl-col border">
+                        <div class="content-list">
+                            <div class="text-new">
+                                <h3 class="text-center">Second-Hand</h3>
+                            </div>
+                            <div class="text-price">
+                                <h3 class="price-pc">$299</h3>
+                            </div>
+                            <div class="main-image text-center">
+                                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="shadow-box" src="asset/img/new-product/10-LU-482-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-p p-1">
+                                <ul class="ul-list">
+                                    <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                </ul>
+                            </div>
+                            <div class="favorite-product text-center">
+                                <span class="span-favorite" id="favorite7"><i class="fa fa-heart"></i></span>
+                                <span class="span-favorite" id="favorite8"><i class="far fa-heart"></i></span>
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                        <div class="content-list">
+                            <div class="text-new">
+                                <h3 class="text-center">Second-Hand</h3>
+                            </div>
+                            <div class="text-price">
+                                <h3 class="price-pc">$599</h3>
+                            </div>
+                            <div class="main-image text-center">
+                                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-p p-1">
+                                <ul class="ul-list">
+                                    <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                </ul>
+                            </div>
+                            <div class="favorite-product text-center">
+                                <span class="span-favorite" id="favorite9"><i class="fa fa-heart"></i></span>
+                                <span class="span-favorite" id="favorite10"><i class="far fa-heart"></i></span>
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                        <div class="content-list">
+                            <div class="text-new">
+                                <h3 class="text-center">Second-Hand</h3>
+                            </div>
+                            <div class="text-price">
+                                <h3 class="price-pc">$499</h3>
+                            </div>
+                            <div class="main-image text-center">
+                                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-p p-1">
+                                <ul class="ul-list">
+                                    <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                </ul>
+                            </div>
+                            <div class="favorite-product text-center">
+                                <span class="span-favorite" id="favorite11"><i class="fa fa-heart"></i></span>
+                                <span class="span-favorite" id="favorite12"><i class="far fa-heart"></i></span>
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                        <div class="content-list">
+                            <div class="text-new">
+                                <h3 class="text-center">Second-Hand</h3>
+                            </div>
+                            <div class="text-price">
+                                <h3 class="price-pc">$399</h3>
+                            </div>
+                            <div class="main-image text-center">
+                                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-p p-1">
+                                <ul class="ul-list">
+                                    <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                    <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                </ul>
+                            </div>
+                            <div class="favorite-product text-center">
+                                <span class="span-favorite" id="favorite13"><i class="fa fa-heart"></i></span>
+                                <span class="span-favorite" id="favorite14"><i class="far fa-heart"></i></span>
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End New model content -->
+                <!-- Set by product -->
+                <div class="set-by-product mt-2">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-8 pt-pl-col">
+                            <img src="asset/img/brand-asus/brand-asus.png" width="100%">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 pt-pl-col">
+                            <!-- <div class="container">                            -->
+                            <a href="http://ads.sabay.com/openx/www/delivery/ck.php?oaparams=2__bannerid=48040__zoneid=491__cb=59355095e4__oadest=http%3A%2F%2Fnews.sabay.com.kh%2Farticle%2Ftag%2Ftiger-street-football-2020" target="_blank"><img src="http://cdn.sabay.com/cdn/ads.sabay.com/images/ef8a41fe822ffa75298494ab24657950.gif" width="100%" height="68" alt="" title="" style="margin-bottom: 5px;"></a>
+                            <a href="http://ads.sabay.com/openx/www/delivery/ck.php?oaparams=2__bannerid=43079__zoneid=313__cb=9f427d7ea5__oadest=http%3A%2F%2Fnews.sabay.com.kh%2Farticle%2Ftag%2Fhealthy-life" target="_blank"><img src="http://cdn.sabay.com/cdn/ads.sabay.com/images/840d2ed1db63b4c245d792e450fdc78c.gif" width="100%" height="68" alt="" title="" style="margin-bottom: 5px;"></a>
+                            <!-- <a href="#"><img src="http://cdn.sabay.com/cdn/ads.sabay.com/images/7a6099a140851f83ee03b082f1a838b4.gif" alt="" style="margin: 5px;"></a> -->
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">New</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$1,299</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite0"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">New</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$256</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/01-LU-482-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/02-LV-125-2-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/03-la-358-1554347962-300x300.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite1"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite2"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">New</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$1,299</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/04-LU-201-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/05-LD-029-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/06-LD-299-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite3"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite4"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">New</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$1,299</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/07-ld-102-1562901742-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/08-la-617-1555123990-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/09-la-361-1561950452-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite5"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite6"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">Second-Hand</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$299</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/10-LU-482-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite7"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite8"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">Second-Hand</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$599</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite9"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite10"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">Second-Hand</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$499</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite11"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite12"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">Second-Hand</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$399</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite13"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite14"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Set by product -->
+                <!-- Set by product -->
+                <div class="set-by-product mt-2">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-8 pt-pl-col">
+                            <img src="asset/img/brand-asus/brand-asus.png" width="100%">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 pt-pl-col">
+                            <!-- <div class="container">                            -->
+                            <a href="http://ads.sabay.com/openx/www/delivery/ck.php?oaparams=2__bannerid=48040__zoneid=491__cb=59355095e4__oadest=http%3A%2F%2Fnews.sabay.com.kh%2Farticle%2Ftag%2Ftiger-street-football-2020" target="_blank"><img src="http://cdn.sabay.com/cdn/ads.sabay.com/images/ef8a41fe822ffa75298494ab24657950.gif" width="100%" height="68" alt="" title="" style="margin-bottom: 5px;"></a>
+                            <a href="http://ads.sabay.com/openx/www/delivery/ck.php?oaparams=2__bannerid=43079__zoneid=313__cb=9f427d7ea5__oadest=http%3A%2F%2Fnews.sabay.com.kh%2Farticle%2Ftag%2Fhealthy-life" target="_blank"><img src="http://cdn.sabay.com/cdn/ads.sabay.com/images/840d2ed1db63b4c245d792e450fdc78c.gif" width="100%" height="68" alt="" title="" style="margin-bottom: 5px;"></a>
+                            <!-- <a href="#"><img src="http://cdn.sabay.com/cdn/ads.sabay.com/images/7a6099a140851f83ee03b082f1a838b4.gif" alt="" style="margin: 5px;"></a> -->
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">New</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$1,299</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite0"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">New</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$256</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/01-LU-482-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/02-LV-125-2-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/03-la-358-1554347962-300x300.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite1"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite2"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">New</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$1,299</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/04-LU-201-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/05-LD-029-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/06-LD-299-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite3"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite4"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">New</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$1,299</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/07-ld-102-1562901742-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/08-la-617-1555123990-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/09-la-361-1561950452-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite5"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite6"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">Second-Hand</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$299</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/10-LU-482-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite7"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite8"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">Second-Hand</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$599</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite9"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite10"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">Second-Hand</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$499</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite11"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite12"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-pl-col border">
+                            <div class="content-list">
+                                <div class="text-new">
+                                    <h3 class="text-center">Second-Hand</h3>
+                                </div>
+                                <div class="text-price">
+                                    <h3 class="price-pc">$399</h3>
+                                </div>
+                                <div class="main-image text-center">
+                                    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="shadow-box" src="asset/img/new-product/LV-726-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LMA-0303-1-300x300.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="shadow-box" src="asset/img/new-product/LL-392-300x300.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-p p-1">
+                                    <ul class="ul-list">
+                                        <li class="li-list text-center"><a href="#">Dell Inspiron 9201i</a></li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>CPU :</b> Intel i7-10510U Max 4.90GHz (8CPUs)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Ram :</b> 16GB (DDR4)</li>
+                                        <li class="li-list"><i class="fas fa-angle-right"></i>&nbsp;<b>Storage :</b> 256GB SSD & 1T HDD</li>
+                                    </ul>
+                                </div>
+                                <div class="favorite-product text-center">
+                                    <span class="span-favorite" id="favorite13"><i class="fa fa-heart"></i></span>
+                                    <span class="span-favorite" id="favorite14"><i class="far fa-heart"></i></span>
+                                    <a href="detail.html" class="btn btn-outline-info btn-sm">View Detial</a>
+                                    <a href="#" class="a-shopping"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Set by product -->
             </div>
         </div>
     </div>
-<!--    End shop by brand-->
-
-    <!-- Start footer -->   
-    <div class="footer">
-        <div class="header-footer">
+    <div class="footer mt-2">
+        <div class="color-footer">
             <div class="container">
-                <h5 class="name_footer">get in touch</h5>
+                <h3>Footer</h3>
             </div>
         </div>
         <div class="content-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 pt-4 col-padding-left-rigth">
-                        <h6>PTC COMPUTER CO., LTD</h6>
-                        <p class="text-company"><b>PTC Computer Co., Ltd</b> was established in Phnom Penh since 1996. We started with a small business,
-                            but as a result of our dedication, loyalty, reliability, affordable prices,
-                            excellent customer services . . . .<a href="#">Read More</a></p>
-                        <p class="mb-1">DOWNLOAD OUR DELIVERY TRACKING APP</p>
-                        <div class="container">
-                            <div class="my-app1">
-                                <a href="#"><img class="app-download" src="asset/img/playstore-300x91.png"></a>
-                            </div>
-                            <div class="my-app2">
-                                <a href="#"><img class="app-download" src="asset/img/ios-1-300x91.png"></a>
-                            </div>
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <h1>H1</h1>
                     </div>
-                    <div class="col-md-4 pt-4">
-                        <h6>CONTACT US</h6>
-                        <ul class="contect-us">
-                            <li>
-                                <img src="asset/img/contect-us/map.png" width="5%">
-                                <span style="font-size: 14px">Building #66, Street 63 Corner St 154, Sangkat Phsar Thmei I, Khan Doun Penh, Phnom Penh, Cambodia</span>
-                            </li>
-                            <li>
-                                <img src="asset/img/contect-us/phone.png" width="5%">
-                                <spna>012 765 625 / 098 710 645</spna>
-                            </li>
-                            <li>
-                                <img src="asset/img/contect-us/mail.png" width="5%">
-                                <span>sales@ptc-computer.com.kh</span>
-                            </li>
-                            <li>
-                                <img src="asset/img/contect-us/time.png" width="5%">
-                                <span>8:00 AM – 6:00 PM</span>
-                            </li>
-                        </ul>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <h1>H2</h1>
                     </div>
-                    <div class="col-md-4 pt-4 col-padding-left-rigth">
-                        <h6>PAYMENTS METHOD</h6>
-                        <div class="pay-now">
-                            <a href="#"><img src="asset/img/contect-us/a-3-card.png" width="80%"></a>
-                        </div>
-                        <div class="reach-us">
-                            <h6>REACH US</h6>
-                            <ul class="reach-li">
-                                <li><a href="#"><img src="asset/img/contect-us/telegram.png" ></a></li>
-                                <li><a href="#"><img src="asset/img/contect-us/whatapp.png" ></a></li>
-                                <li><a href="#"><img src="asset/img/contect-us/line.png" ></a></li>
-                                <li><a href="#"><img src="asset/img/contect-us/wechat.png" ></a></li>
-                                <li><a href="#"><img src="asset/img/contect-us/viber.png" ></a></li>
-                            </ul>
-                        </div>
-                        <div class="follow-us">
-                            <h6>FOLLOW US</h6>
-                            <ul class="reach-li">
-                                <li><a href="#"><img src="asset/img/contect-us/facebook.png" ></a></li>
-                                <li><a href="#"><img src="asset/img/contect-us/Linked1.png" ></a></li>
-                                <li><a href="#"><img src="asset/img/contect-us/youtube.png" ></a></li>
-                                <li><a href="#"><img src="asset/img/contect-us/instagram.png" ></a></li>                                
-                            </ul>
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <h1>H3</h1>
                     </div>
                 </div>
             </div>
         </div>
-    </div>   
-    <!-- End footer -->
-    <script src="asset/js/bootstrap.min.js"></script>
+    </div>
+    <!-- <script src="asset/js/bootstrap.min.js"></script> -->
     <script src="asset/js/fontawesome.js"></script>
     <script src="asset/js/jquery-3.5.1.min.js"></script>
     <script src="asset/js/jquery-me.js"></script>
+    <script src="asset/js/jquery.impulse.slider.js"></script>
 </body>
+
 </html>
