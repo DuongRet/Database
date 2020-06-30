@@ -1,0 +1,22 @@
+.ni{
+    background-color: rgb(8, 255, 181);
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.ni:hover{
+    -webkit-box-shadow: 0px -1px 12px 10px rgba(0, 225, 255);
+    -moz-box-shadow: 0px -1px 12px 10px rgba(0, 225, 255);
+    box-shadow: 0px -1px 12px 10px rgba(0, 225, 255);
+    background-color: rgb(0, 225, 255);
+}
+.na{
+    margin-top: 10%;
+}
+.img{
+    margin: 15%;
+    width: 400px;
+    height: auto;
+}
+.text{
+    font-size: 20px;
+}

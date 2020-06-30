@@ -1,0 +1,29 @@
+.grid-container {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 50px;
+  
+}
+.grid-container > div:hover {
+  -webkit-box-shadow: 0px -1px 12px 10px rgba(32,191,212,1);
+  -moz-box-shadow: 0px -1px 12px 10px rgba(32,191,212,1);
+  box-shadow: 0px -1px 12px 10px rgba(32,191,212,1);
+}
+.s1-1{
+  margin-left: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+.grid-container > div{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding-top:0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  transition: all 0.5s;
+}
