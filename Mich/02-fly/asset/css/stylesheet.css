@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Chenla&family=Poppins&family=Kantumruy:wght@300;400&family=Philosopher&family=Piedra&family=Courgette&display=swap');
+/*f
+font-family: 'Bokor', Poppins;
+font-family: 'Chenla', Poppins;
+font-family: 'Poppins', sans-serif;
+font-family: 'Kantumruy', Poppins;
+*/
 /*Start Home Page*/
 *{
     margin: 0;
@@ -69,9 +77,10 @@ div.alert-chart div.icon-closing a.my-icon-chart:hover{
     opacity: 0.5;
 }
 p.company-name{
+    font-family: 'Poppins', sans-serif;
     /*margin-bottom: 0;*/
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
     /*text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 2px 2px 2px rgba(206,89,55,0);*/
@@ -94,6 +103,7 @@ img.this-logoc{
     height: 50px;
 }
 p.p-chart{
+    font-family: 'Kantumruy', Poppins;
     padding: 0 10px;
     font-weight: bold;
     background-color: #dfe4ea;
@@ -117,11 +127,13 @@ ul.go-chart li.li-go-chart:hover{
     opacity: 0.7;
 }
 a.a-go-chart{
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-size: 18px;
     color: white;
 }
 a.login-go-chart{
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 
@@ -183,7 +195,7 @@ ul.order_1 li a{
     color: white;
 }
 span.li_color{
-/*    padding: 5px;*/
+    font-family: 'Poppins', sans-serif;
     font-size: 13px;
     color: white;
 }
@@ -219,7 +231,10 @@ div.padding_me{
         font-size: 10px;
     }
     ul.chart-to {
-        margin-left: 20px;
+        /*margin-left: 20px;*/
+    }
+    ul.go-chart li{
+        line-height: 30px;
     }
     ul.chart-to li {
         margin: 0;
@@ -470,15 +485,18 @@ div.position_me{
     font-size: 14px !important;
 }
 .my_card h6{
+    font-family: 'Poppins', sans-serif;
     width: 65%;
     float: left;
     opacity: 0.7;
 }
 
 .my_card h5 a{
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 div.position_me p{
+    font-family: 'Poppins', sans-serif;
     padding-top: 5px;
     margin-bottom: 5px;
     opacity: 0.7;
@@ -529,6 +547,7 @@ ul.main-menu li.menu-list-main:hover a.a-main{
     color: red;
 }
 ul.main-menu li a{
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: aliceblue;
     text-decoration: none;
@@ -692,6 +711,7 @@ div.text-new {
     z-index: 100;
 }
 div.text-new h3.text-center{
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
     color: red;
     text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 2px 2px 2px rgba(206,89,55,0);    
@@ -705,12 +725,18 @@ img.shadow-box{
     
 }
 ul.ul-list{
+    padding: 0;
     list-style-type: none;
     margin-bottom: 0;
 }
+ul.ul-list li.li-list{
+    font-family: 'Poppins', sans-serif;
+}
 ul.ul-list li.li-list a{
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
     font-weight: bold;
+    color: blue;
     text-decoration: none;
 }
 .text-price{
@@ -740,10 +766,14 @@ a.a-shopping{
 .favorite-product a.btn{
     margin: 0 20px;
 }
+a.btn-seeMore{
+    font-family: 'Poppins', sans-serif;
+}
 /*End New product*/
-/*.bg-color{
-    background: linear-gradient(to left, rgb(0, 202, 249) 0%, rgb(0, 51, 157) 100%);
-}*/
+
+
+
+/* Start footer*/
 .content-footer{
     background: rgba(17, 17, 17, 0.884);
     /*background: linear-gradient(to left, rgb(0, 202, 249) 0%, rgb(0, 51, 157) 100%);*/
@@ -753,7 +783,7 @@ a.a-shopping{
     color: #999;
 }
 .h3{
-    font-family: 'Courgette', cursive;
+    font-family: 'Piedra', cursive;
     
 }
 .h2{
@@ -821,13 +851,82 @@ a.a-shopping{
     font-size: 20px;
 }
 .p{
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+ul.manu-footer li a{
+    font-family: 'Poppins', sans-serif;
 }
 
 
 
-
-/* Start footer*/
-
-
 /*End Home Page*/
+
+/*Start detail Page*/
+div.img-zoom img{
+   width: 100%;
+   margin: auto;
+}
+img.hover-img{
+     width: 100%;
+}
+img.hover-img:hover{
+    cursor: pointer;
+}
+.img-zoom{
+    display: flex;
+    position: relative;
+}
+h3.name-product{
+    font-family: 'Poppins', serif;
+}
+img.img.list-img{
+    width: 100%;
+}
+#list-img2,
+#list-img3,
+#list-img4,
+#list-img5,
+#list-img6{
+    display: none;
+    overflow: hidden;
+}
+tbody.info-pc tr th,
+tbody.info-pc tr td{
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+tbody.info-pc tr th{
+    width: 200px;
+}
+.specification{
+    border-bottom: 1px solid black;
+}
+.specification h3{
+    font-family: 'Poppins', sans-serif;
+    /*text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 2px 2px 2px rgba(206,89,55,0);*/
+}
+ol.condition li{
+    font-family: 'Kantumruy', Poppins;
+}
+p.note-buy{
+    font-family: 'Bokor', Poppins;
+}
+ul.desciption-buy,
+ul.ul-box-buy{
+    list-style-type: none;
+    padding-left: 20px;
+}
+ul.desciption-buy li{
+    font-family: 'Poppins', sans-serif;
+}
+span.detail-price{
+    font-weight: bold;
+    color: red;
+}
+.input-count{
+    width: 45px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+/*End detail Page*/
