@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/img/logo.jpg" type="image/x-icon">
+    <title>Detail Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="asset/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="asset/css/stylesheet.css">
+</head>
+<body>
+	<!-- Start chart -->
+    <div class="my-chart">
+        <div class="alert-chart" id="my_chart">
+            <div class="content-chart">
+                <p class="company-name">Fly-computer.com・Typically replies within minutes</p>
+                <ul class="chart-to">
+                    <li class="chart-logo">
+                        <img class="this-logoc" src="asset/img/logo.jpg">
+                    </li>
+                    <li class="alert-help">
+                        <p class="p-chart">សួរស្តីបងប្អូន! តើមានអ្វីឲ្យ​ខ្ញុំជួយទេ?</p>
+                    </li>
+                </ul>
+                <ul class="go-chart">
+                    <li class="li-go-chart">
+                        <a href="#" class="a-go-chart"><i class="fab fa-facebook-messenger"></i>&nbsp;Continue as User</a>
+                    </li>
+                    <li>
+                        <a href="#" class="login-go-chart">Not you? Log into Messenger</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon-closing">
+                <a class="my-icon-chart" id="closing_chart"><i class="far fa-times-circle"></i></a>
+            </div>
+        </div>
+        <div class="main-chart">
+            <div class="position-chart">
+                <a href="#" id="show_telegram"><img class="img-telegram" src="asset/img/telegram.jpg"></a>
+                <a href="#" id="show_facebook"><img class="img-facebook" src="asset/img/facebook.png"></a>
+                <a href="#" id="show_chart"><img class="img-chart" src="asset/img/messager.png"></a>
+                <a href="#" id="show_scroll"><i class="fas fa-angle-double-up"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- End chart -->
+    <!--    start header-->
+    <div class="bg-header" id="header_scroll_up">
+        <div class="container_me">
+            <div class="header">
+                <div class="row">
+                    <div class="col-2 col-md-2">
+                        <a href="index.html"><img class="my_logo" src="asset/img/logo.jpg" alt="Logo"></a>
+                    </div>
+                    <div class="col-8 col-md-6">
+                        <div class="search_me">
+                            <div class="input-group search_border">
+                                <input type="search" class="form-control my_search" id="search" name="search" width="100%" placeholder="Search">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn search_icon bg-white"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-4 padding_me">
+                        <div class="my_top_header">
+                            <div class="responsive_1">
+                                <div class="text-center icon_responsive">
+                                    <a href="#"><i class="far fa-user-circle"></i> </a>
+                                </div>
+                            </div>
+                            <div class="order_main">
+                                <ul class="order_1">
+                                    <li><a href="#"><i class="far fa-heart"></i>&nbsp;<span class="li_color">Wish List</span></a></li>
+                                    <li class="main_card"><a href="#"><i class="fas fa-shopping-cart"></i><sup style="color: red; font-weight: bold;">0</sup> <span class="li_color">Card</span></a>
+                                        <div class="sub_card">
+                                            <div class="position_me">
+                                                <div class="my_card">
+                                                    <h6>0 ITEM</h6>
+                                                    <h5><a href="#" class="text-info">View card</a></h5>
+                                                </div>
+                                                <p>You have no items in your shopping cart.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> <span class="li_color">Login/Sign Up</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    End header-->
+    <!--    Start menu-->
+    <div class="my-main-menu sticky-top">
+        <div class="container-fluid">
+            <input type="checkbox" id="check_me">
+            <label for="check_me" class="click-menu"><i class="fas fa-bars"></i>&nbsp;Menu</label>
+            <div class="show_menu_all">
+                <ul class="main-menu">
+                    <label for="check_me" class="click-cencel"><i class="fas fa-times-circle"></i></label>
+                    <li class="menu-list-main"><a class="a-main active" href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a>
+                    <li class="menu-list-main" id="sub-main1"><a class="a-main" href="#">Laptop&nbsp;<i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu2" id="sub_menu1">
+                            <ul class="s-sub">
+                                <li class="li-s-sub" id="d_ub_main1"><a class="a-li-s-sub" href="#">Notebook&nbsp;<i class="fas fa-angle-down"></i></a>
+                                    <div class="d-sub-menu" id="d_sub_menu">
+                                        <ul class="d-sub-menu">
+                                            <li class="d-li-s-sub"><a href="#">Ultrabook</a></li>
+                                            <li class="d-li-s-sub"><a href="#">All Notebooks</a></li>
+                                            <li class="d-li-s-sub"><a href="#">Macbook</a></li>
+                                            <li class="d-li-s-sub"><a href="#">Laptop Gaming</a></li>
+                                            <li class="d-li-s-sub"><a href="#">Laptops 2 in 1</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Microsoft</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Asus</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Acer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Dell</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Lenovo</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Toshiba</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Razer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Nec</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Samsung</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">HP</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Anitech</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list-main" id="menu_sub"><a class="a-main" href="#">Desktop</a>
+                        <div class="sub-menu" id="sub_menu">
+                            <ul>
+                                <li><a href="#">Milestone</a></li>
+                                <li><a href="#">Our Awards</a></li>
+                                <li><a href="#">Our Partners</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Server</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Camera</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Service</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Printer</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Accessories</a></li>
+                    <li class="menu-list-main" id="sub-main1"><a class="a-main" href="#">Brand name&nbsp;<i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu2" id="sub_menu1">
+                            <ul class="s-sub">
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">MacBook</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Microsoft</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Asus</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Acer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Dell</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Lenovo</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Toshiba</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Razer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Nec</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Samsung</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">HP</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Anitech</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="icon_shopping">
+                <!-- <div class="icon-me"> -->
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i><sup style="color: red; font-weight: bold;">0</sup></a>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <!--End menu-->
+    <div class="content-detail">
+    	<div class="container">
+    		<div class="row">
+	    		<div class="col-md-4">
+	    			<div class="img-zoom">
+	    				<img src="./asset/img/detail/dell/LI-441-300x300.jpg" width="100%">
+	    			</div>
+	    		</div>
+	    		<div class="col-md-4">
+	    			<h3>ASUS G531GU-AZ497T 1B-Hero Black i7-9750H/16GB/1TB PCIE/GTX1660Ti 6GB/240 HZ/15.6″FHD/W10</h3>
+	    		</div>
+	    		<div class="col-md-4">
+	    			
+	    		</div>
+	    	</div>
+    	</div>
+    </div>
+    <!-- <script src="asset/js/bootstrap.min.js"></script> -->
+    <script src="asset/js/fontawesome.js"></script>
+    <script src="asset/js/jquery-3.5.1.min.js"></script>
+    <script src="asset/js/jquery-me.js"></script>
+    <script src="asset/js/jquery.impulse.slider.js"></script>
+</body>
+</html>
