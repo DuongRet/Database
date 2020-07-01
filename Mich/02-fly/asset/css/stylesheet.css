@@ -777,7 +777,7 @@ a.btn-seeMore{
 .content-footer{
     background: rgba(17, 17, 17, 0.884);
     /*background: linear-gradient(to left, rgb(0, 202, 249) 0%, rgb(0, 51, 157) 100%);*/
-    padding: 80px 0;
+    padding-top: 80px;
 }
 .p{
     color: #999;
@@ -855,9 +855,24 @@ a.btn-seeMore{
 }
 ul.manu-footer li a{
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
-
-
+ul.manu-footer li:hover{
+    cursor: pointer;
+}
+ul.manu-footer li:hover a{
+    color: red;
+    transition: all 0.5s;
+}
+h1.content-bottom{
+    padding: 20px;
+}
+h1.content-bottom a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Piedra', sans-serif;
+}
+/* End footer */
 
 /*End Home Page*/
 
@@ -933,7 +948,8 @@ span.detail-price{
 
 /* start camera page */
 .top{
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    border-top: 4px solid blue;
 }
 
 
