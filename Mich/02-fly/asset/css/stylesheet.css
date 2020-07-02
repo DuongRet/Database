@@ -865,6 +865,7 @@ ul.manu-footer li:hover a{
     transition: all 0.5s;
 }
 h1.content-bottom{
+    margin-bottom: 0;
     padding: 20px;
 }
 h1.content-bottom a{
