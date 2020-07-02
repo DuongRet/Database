@@ -1246,7 +1246,7 @@
                 <div class="logo-bottom">
                     <div class="container">
                         <div class="text-center">
-                            <h1 class="content-bottom"><a href="index.html">Fly Computer</a></h1>
+                            <p class="content-bottom"><i class="far fa-copyright"></i>&nbsp;រក្សា​សិទ្ធ​គ្រប់​យ៉ាង​ដោយ​ &nbsp;<a href="index.html">Fly Computer</a>&nbsp;ឆ្នាំ&nbsp;<span id="year"></span></p>
                         </div>
                     </div>
                 </div>
@@ -1259,6 +1259,12 @@
     <script src="asset/js/jquery-3.5.1.min.js"></script>
     <script src="asset/js/jquery-me.js"></script>
     <script src="asset/js/jquery.impulse.slider.js"></script>
+    <script>
+        var d = new Date();
+      var n = d.getFullYear();
+      document.getElementById("year").innerHTML = n;
+
+    </script>
 </body>
 
 </html>
