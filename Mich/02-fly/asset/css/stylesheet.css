@@ -270,7 +270,7 @@ div.padding_me{
     /*copyright*/
     p.content-bottom{
         padding: 40px;
-        font-size: 14px;
+        font-size: 12px;
     }
     p.content-bottom a{
         font-size: 16px !important;
@@ -964,7 +964,8 @@ span.detail-price{
     /* margin-top: 5px; */
     border-top: 4px solid blue;
 }
-
-
-
+.mr-ml-margin{
+    margin-right: 0;
+    margin-left: 0;
+}
 /* end camera page */
