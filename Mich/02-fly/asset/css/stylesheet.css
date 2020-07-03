@@ -786,7 +786,7 @@ a.btn-seeMore{
 .content-footer{
     background: rgba(17, 17, 17, 0.884);
     /*background: linear-gradient(to left, rgb(0, 202, 249) 0%, rgb(0, 51, 157) 100%);*/
-    padding-top: 80px;
+    padding-top: 50px;
 }
 .p{
     color: #999;
@@ -956,6 +956,10 @@ span.detail-price{
     text-align: center;
     color: red;
     font-weight: bold;
+}
+.table-scpecification{
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
 }
 /*End detail Page*/
 
