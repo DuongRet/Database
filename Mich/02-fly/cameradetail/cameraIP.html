@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../asset/img/logo.jpg" type="image/x-icon">
+    <title>Camera Detail Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="asset/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../asset/css/stylesheet.css">
+</head>
+
+<body>
+    <!-- Start chart -->
+    <div class="my-chart">
+        <div class="alert-chart" id="my_chart">
+            <div class="content-chart">
+                <p class="company-name">Fly-computer.com・Typically replies within minutes</p>
+                <ul class="chart-to">
+                    <li class="chart-logo">
+                        <img class="this-logoc" src="../asset/img/logo.jpg">
+                    </li>
+                    <li class="alert-help">
+                        <p class="p-chart">សួរស្តីបងប្អូន! តើមានអ្វីឲ្យ​ខ្ញុំជួយទេ?</p>
+                    </li>
+                </ul>
+                <ul class="go-chart">
+                    <li class="li-go-chart">
+                        <a href="#" class="a-go-chart"><i class="fab fa-facebook-messenger"></i>&nbsp;Continue as User</a>
+                    </li>
+                    <li>
+                        <a href="#" class="login-go-chart">Not you? Log into Messenger</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon-closing">
+                <a class="my-icon-chart" id="closing_chart"><i class="far fa-times-circle"></i></a>
+            </div>
+        </div>
+        <div class="main-chart">
+            <div class="position-chart">
+                <a href="#" id="show_telegram"><img class="img-telegram" src="../asset/img/telegram.jpg"></a>
+                <a href="#" id="show_facebook"><img class="img-facebook" src="../asset/img/facebook.png"></a>
+                <span id="show_chart"><img class="img-chart" src="asset/img/messager.png"></span>
+                <a href="#" id="show_scroll"><i class="fas fa-angle-double-up"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- End chart -->
+    <!--    start header-->
+    <div class="bg-header" id="header_scroll_up">
+        <div class="container_me">
+            <div class="header">
+                <div class="row">
+                    <div class="col-2 col-md-2">
+                        <a href="../index.html"><img class="my_logo" src="../asset/img/logo.jpg" alt="Logo"></a>
+                    </div>
+                    <div class="col-8 col-md-6">
+                        <div class="search_me">
+                            <div class="input-group search_border">
+                                <input type="search" class="form-control my_search" id="search" name="search" width="100%" placeholder="Search">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn search_icon bg-white"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-4 padding_me">
+                        <div class="my_top_header">
+                            <div class="responsive_1">
+                                <div class="text-center icon_responsive">
+                                    <a href="#"><i class="far fa-user-circle"></i> </a>
+                                </div>
+                            </div>
+                            <div class="order_main">
+                                <ul class="order_1">
+                                    <li><a href="#"><i class="far fa-heart"></i>&nbsp;<span class="li_color">Wish List</span></a></li>
+                                    <li class="main_card"><a href="#"><i class="fas fa-shopping-cart"></i><sup style="color: red; font-weight: bold;">0</sup> <span class="li_color">Card</span></a>
+                                        <div class="sub_card">
+                                            <div class="position_me">
+                                                <div class="my_card">
+                                                    <h6>0 ITEM</h6>
+                                                    <h5><a href="#" class="text-info">View card</a></h5>
+                                                </div>
+                                                <p>You have no items in your shopping cart.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> <span class="li_color">Login/Sign Up</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    End header-->
+    <!--    Start menu-->
+    <div class="my-main-menu sticky-top">
+        <div class="container-fluid">
+            <input type="checkbox" id="check_me">
+            <label for="check_me" class="click-menu"><i class="fas fa-bars"></i>&nbsp;Menu</label>
+            <div class="show_menu_all">
+                <ul class="main-menu">
+                    <label for="check_me" class="click-cencel"><i class="fas fa-times-circle"></i></label>
+                    <li class="menu-list-main"><a class="a-main active" href="../index.html"><i class="fas fa-home"></i>&nbsp;Home</a>
+                    <li class="menu-list-main" id="sub-main1"><a class="a-main" href="#">Laptop&nbsp;<i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu2" id="sub_menu1">
+                            <ul class="s-sub">
+                                <li class="li-s-sub" id="d_ub_main1"><a class="a-li-s-sub" href="#">Notebook&nbsp;<i class="fas fa-angle-down"></i></a>
+                                    <div class="d-sub-menu" id="d_sub_menu">
+                                        <ul class="d-sub-menu">
+                                            <li class="d-li-s-sub"><a href="#">Ultrabook</a></li>
+                                            <li class="d-li-s-sub"><a href="#">All Notebooks</a></li>
+                                            <li class="d-li-s-sub"><a href="#">Macbook</a></li>
+                                            <li class="d-li-s-sub"><a href="#">Laptop Gaming</a></li>
+                                            <li class="d-li-s-sub"><a href="#">Laptops 2 in 1</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Microsoft</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Asus</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Acer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Dell</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Lenovo</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Toshiba</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Razer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Nec</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Samsung</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">HP</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Anitech</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list-main" id="sub-main1"><a class="a-main" href="#">Desktop&nbsp;<i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu2" id="sub_menu1">
+                            <ul class="s-sub">
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">MacBook</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Microsoft</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Asus</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Acer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Dell</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Lenovo</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Toshiba</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Razer</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Nec</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Samsung</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">HP</a></li>
+                                <li class="li-s-sub"><a class="a-li-s-sub" href="#">Anitech</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Server</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="../camera.html">Camera</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Service</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Printer</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Accessories</a></li>
+                    <li class="menu-list-main" id="sub-main1"><a class="a-main" href="#">System POS</a></li>
+                    <li class="menu-list-main"><a class="a-main" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="icon_shopping">
+                <!-- <div class="icon-me"> -->
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i><sup style="color: red; font-weight: bold;">0</sup></a>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <!--End menu-->
+    <div class="content-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-2">
+                    <div class="img-zoom" id="main-image">
+                        <img class="list-img" id="list-img1" src="../asset/img/camera/HAC-HDBW1400E_BELCO_DAHUA.jpg">
+                        <img class="list-img" id="list-img2" src="../asset/img/camera/HAC-HDBW2241E.jpg">
+                        <img class="list-img" id="list-img3" src="../asset/img/camera/HAC-HDBW1400E_BELCO_DAHUA.jpg">
+                        <img class="list-img" id="list-img4" src="../asset/img/camera/HAC-HDBW2241E.jpg">
+                        <img class="list-img" id="list-img5" src="../asset/img/camera/HAC-HDBW1400E_BELCO_DAHUA.jpg">
+                        <img class="list-img" id="list-img6" src="../asset/img/camera/HAC-HDBW2241E.jpg">
+                    </div>
+                    <div class="img-position">
+                        <div class="row">
+                            <div class="col-2 pt-pl-col border">
+                                <img class="hover-img" id="img1" src="../asset/img/camera/HAC-HDBW1400E_BELCO_DAHUA.jpg">
+                            </div>
+                            <div class="col-2 pt-pl-col border">
+                                <img class="hover-img" id="img2" src="../asset/img/camera/HAC-HDBW2241E.jpg">
+                            </div>
+                            <div class="col-2 pt-pl-col border">
+                                <img class="hover-img" id="img3" src="../asset/img/camera/HAC-HDBW1400E_BELCO_DAHUA.jpg">
+                            </div>
+                            <div class="col-2 pt-pl-col border">
+                                <img class="hover-img" id="img4" src="../asset/img/camera/HAC-HDBW2241E.jpg">
+                            </div>
+                            <div class="col-2 pt-pl-col border">
+                                <img class="hover-img" id="img5" src="../asset/img/camera/HAC-HDBW1400E_BELCO_DAHUA.jpg">
+                            </div>
+                            <div class="col-2 pt-pl-col border">
+                                <img class="hover-img" id="img6" src="../asset/img/camera/HAC-HDBW2241E.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-2">
+                    <h3 class="name-product">Dell Inspiron 15 3000 Laptop (10th Gen)</h3>
+                    <div class="main-buy">   
+                        <h4 class="confirm">Confirm!!!</h4>
+                        <ul class="desciption-buy">
+                            <li><i class="fa fa-fan"></i>&nbsp;Processor : 1.1GHz quad-core Intel Core i5, Turbo Boost up to 3.5GHz, with 6MB L3 cache</li>
+                            <li><i class="fa fa-fan"></i>&nbsp;Operating System : macOS Catalina</li>
+                            <li><i class="fa fa-fan"></i>&nbsp;Memory : 8GB of 3733MHz LPDDR4X onboard memory</li>
+                            <li><i class="fa fa-fan"></i>&nbsp;Storage : 512GB PCIe-based SSD</li>
+                            <li><i class="fa fa-fan"></i>&nbsp;Graphic : Intel Iris Plus Graphics</li>
+                            <li><i class="fa fa-fan"></i>&nbsp;Display : 13.3-inch (diagonal) LED-backlit display with IPS technology, 2560×1600 native resolution at 227 pixels&nbsp; per inch with support for millions of colours</li>
+                            <li><i class="fa fa-fan"></i>&nbsp;Price : <span class="detail-price">$599</span></li>
+                            <li><i class="fa fa-fan"></i>&nbsp;Count device :
+                                <span class="btn btn-white border btn-sm" id="sub"><i class="fa fa-minus"></i></span>
+                                <input class="input-count" type="number" id="cdevice" name="count" min="0" placeholder="1">
+                                <span class="btn btn-white border btn-sm" id="add"><i class="fa fa-plus"></i></span>
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="box-buy">
+                        
+                    </div>
+                    <blockquote style="padding-left: 40px">
+                        <p class="note-buy">ដើម្បីទិញ</p>
+                        <ol class="condition">
+                            <li>សូមរើសពណ៌និងទំហំ រួចចុចដាក់ចូលកន្ត្រកខាងក្រោម</li>
+                            <li>អ្នកអាចបន្ដជ្រើសរើសទំនិញអ្នកចង់ទិញបន្ទាប់</li>
+                            <li>ជាចុងក្រោយចុចលើរូបកន្ត្រកខាងលើស្នាំដៃដែលមានលេខចំនួនទំនិញ</li>
+                            <li>រួចចុចលើទិញ "CHECKOUT" ខាងស្ដាំដៃអ្នក</li>
+                        </ol>
+                    </blockquote>
+                </div>
+                <div class="col-12 mt-2">
+                    <div class="specification">
+                        <h3>Specification</h3>
+                    </div>
+                    <table class="table table-borderless">
+                        <tbody class="info-pc">
+                            <tr>
+                                <th>Processor</th>
+                                <td>10th Generation Intel® Core™ i7-9750H Processor ( 2.60 GHz up to 4.50 GHz, 12MB Cache, 6Core)</td>
+                            </tr>
+                            <tr>
+                                <th>Operating System</th>
+                                <td>Window 10 Home Single Language 64 bit</td>
+                            </tr>
+                            <tr>
+                                <th>Memory</th>
+                                <td>8GB DDR4 2666V (8GB x1) </td>
+                            </tr>
+                            <tr>
+                                <th>Storage</th>
+                                <td>256GB M.2 PCIe NVMe Solid State Drive</td>
+                            </tr>
+                            <tr>
+                                <th>Graphic</th>
+                                <td>NVIDIA® GeForce® GTX 1050 with 3GB GDDR5 </td>
+                            </tr>
+                            <tr>
+                                <th>Display</th>
+                                <td>15.6-inch FHD (1920 x 1080) Anti-glare LED Backlight Non-touch Wide Viewing Angle Display</td>
+                            </tr>
+                            <tr>
+                                <th>Optical Drive</th>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <th>Wireless</th>
+                                <td>802.11ac 2x2 WiFi + Bluetooth 5.0</td>
+                            </tr>
+                            <tr>
+                                <th>Network</th>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <th>Webcam</th>
+                                <td>Integrated Widescreen HD (720p) Webcam with Dual Digital Microphone Array</td>
+                            </tr>
+                            <tr>
+                                <th>Sound</th>
+                                <td>Stereo Speakers with Waves MaxxAudio Pro tuning</td>
+                            </tr>
+                            <tr>
+                                <th>Ports</th>
+                                <td>1x HDMI 2.0 out, 3x USB 3.1 Gen 1, 1x Thunderbolt™ 3 (DP/PowerDelivery) Type-C™, 1x 3.5mm Headphone/Microphone combination jack, 1x Power (4.5mm barrel),1x Micro SD Media Card Reader (SD, SDHC, SDXC)</td>
+                            </tr>
+                            <tr>
+                                <th>Keyboard</th>
+                                <td>Backlit Keyboard / FingerPrint </td>
+                            </tr>
+                            <tr>
+                                <th>Battery</th>
+                                <td>3-Cell 56WHr Integrated</td>
+                            </tr>
+                            <tr>
+                                <th>Weight</th>
+                                <td>1.87kg (4.12 lbs)</td>
+                            </tr>
+                            <tr>
+                                <th>Warranty</th>
+                                <td>1Year on part and servics, 4years on services</td>
+                            </tr>
+                            <tr>
+                                <th>Warranty</th>
+                                <td>6months on battery, No Warranty on adapter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer mt-2">
+        <div class="content-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                        <h3 class="h3">Fly-computer</h3>
+                        <p class="p"><strong style="color: white; opacity:0.8">Fly computer</strong> was established in Siem Reap since 2000. We started with a small business, but as a result of our dedication, loyalty, reliability and affordable prices.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+                        <h2 class="h2">Products</h2>
+                        <ul class="manu-footer">
+                            <li><a href="">Computers</a></li>
+                            <li><a href="">Printers</a></li>
+                            <li><a href="">Cameras</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+                        <h2 class="h2">Service</h2>
+                        <ul class="manu-footer">
+                            <li><a href="">Repair</a></li>
+                            <li><a href="">Software</a></li>
+                            <li><a href="">Networknig</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+                        <h2 class="h2">Follow us</h2>
+                        <p class="p">Please follow us on our social media profit in oder to keep updated.</p>
+                        <a href=""><i class=" fab fa-facebook"></i></a>
+                        <a href=""><i class=" fab fa-linkedin"></i></a>
+                        <a href=""><i class=" fab fa-twitter"></i></a>
+                        <a href=""><i class=" fab fa-pinterest"></i></a>
+                        <a href=""><i class=" fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+    <!-- <script src="asset/js/bootstrap.min.js"></script> -->
+    <script src="../asset/js/fontawesome.js"></script>
+    <script src="../asset/js/jquery-3.5.1.min.js"></script>
+    <script src="../asset/js/jquery-me.js"></script>
+    <script src="../asset/js/jquery.impulse.slider.js"></script>
+</body>
+
+</html>
