@@ -1017,3 +1017,12 @@ span.detail-price{
     letter-spacing: ;
 }
 /* end camera page */
+
+/*Accessories page*/
+
+ul li a.nav-link{
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 10px;
+}
+
+/*End Accessories*/
